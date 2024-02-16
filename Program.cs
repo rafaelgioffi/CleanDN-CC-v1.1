@@ -97,6 +97,11 @@ namespace CleanDN_CC
                             Log($"Gerado o arquivo com o(s) DN(s) {DNIgn} em {FolderToResult}{FileValidName}...", false);
                             Console.WriteLine($"Gerado o arquivo com o(s) DN(s) {DNIgn} em {FolderToResult}{FileValidName}...");
                         }
+                        else
+                        {
+                            Log($"Nenhum DN inválido encontrado! Nenhuma alteração realizada no arquivo {file}", false);
+                            Console.WriteLine($"Nenhum DN inválido encontrado! Nenhuma alteração realizada no arquivo {file}");
+                        }
                     }
                     catch (Exception ex)
                     {
